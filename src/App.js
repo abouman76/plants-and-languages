@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React from 'react';
 import {
   BrowserRouter as Router,
   Switch,
@@ -9,30 +9,7 @@ import Home from './pages/home/Home';
 import AboutUs from './pages/aboutUs/AboutUs';
 import AllPlants from './pages/allPlants/AllPlants';
 
-// import { LanguageSetting } from "./context/LanguageContext";
-// import {useLanguage} from "./context/LanguageContext";
-
 function App() {
-
-    // const [language, setLanguage] = useLanguage();
-
-    // const [language, setLanguage] = useState("nl");
-    //
-    // const setNl = () => {
-    //     setLanguage("nl")
-    // }
-    //
-    // const setEs = () => {
-    //     setLanguage("es")
-    // }
-    //
-    // const data = {
-    //     activeLanguage: language,
-    //     setNlFunction: setNl,
-    //     setEsFunction: setEs
-    // }
-
-   // console.log("data", data);
 
   return (
     <Router>

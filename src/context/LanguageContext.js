@@ -19,6 +19,8 @@ const LanguageProvider = (props) => {
         setEsFunction: setEs
     }
 
+    // console.log("data", data);
+
     return <LanguageSetting.Provider value={data}>
                 { props.children }
             </LanguageSetting.Provider>
