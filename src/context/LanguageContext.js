@@ -5,21 +5,21 @@ export const LanguageSetting = createContext({});
 const LanguageProvider = (props) => {
     const [language, setLanguage] = useState("nl");
 
-    // const setNl = () => {
-    //     setLanguage("nl")
-    // }
-    //
-    // const setEs = () => {
-    //     setLanguage("es")
-    // }
-    //
-    // const data = {
-    //     activeLanguage: language,
-    //     setNlFunction: setNl,
-    //     setEsFunction: setEs
-    // }
+    const setNl = () => {
+        setLanguage("nl")
+    }
 
-    return <LanguageSetting.Provider value={{ language, setLanguage }}>
+    const setEs = () => {
+        setLanguage("es")
+    }
+
+    const data = {
+        activeLanguage: language,
+        setNlFunction: setNl,
+        setEsFunction: setEs
+    }
+
+    return <LanguageSetting.Provider value={data}>
                 { props.children }
             </LanguageSetting.Provider>
 

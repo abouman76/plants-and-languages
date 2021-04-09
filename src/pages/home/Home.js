@@ -1,10 +1,10 @@
 import React, {useContext} from 'react';
 import content from '../../data/content.json';
 
-import { LanguageSetting } from "../../context/LanguageContext";
+import { useLanguage } from "../../context/LanguageContext";
 
 function Home() {
-    const {activeLanguage} = useContext(LanguageSetting);
+    const {activeLanguage} = useLanguage();
   return (
     <div className="page-container">
         {/*<h1>{activeLanguage}</h1>*/}

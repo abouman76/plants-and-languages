@@ -6,10 +6,10 @@ import { ReactComponent as FlagES } from "../../assets/spain.svg";
 import content from '../../data/content.json';
 import './Header.css';
 
-import { LanguageSetting } from "../../context/LanguageContext";
+import { useLanguage } from "../../context/LanguageContext";
 
 function Header() {
-  const {activeLanguage, setEsFunction, setNlFunction} = useContext(LanguageSetting);
+  const {activeLanguage, setEsFunction, setNlFunction} = useLanguage();
   return (
     <>
       <header>

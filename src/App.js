@@ -9,33 +9,32 @@ import Home from './pages/home/Home';
 import AboutUs from './pages/aboutUs/AboutUs';
 import AllPlants from './pages/allPlants/AllPlants';
 
-import { LanguageSetting } from "./context/LanguageContext";
+// import { LanguageSetting } from "./context/LanguageContext";
 // import {useLanguage} from "./context/LanguageContext";
 
 function App() {
 
     // const [language, setLanguage] = useLanguage();
 
-    const [language, setLanguage] = useState("nl");
+    // const [language, setLanguage] = useState("nl");
+    //
+    // const setNl = () => {
+    //     setLanguage("nl")
+    // }
+    //
+    // const setEs = () => {
+    //     setLanguage("es")
+    // }
+    //
+    // const data = {
+    //     activeLanguage: language,
+    //     setNlFunction: setNl,
+    //     setEsFunction: setEs
+    // }
 
-    const setNl = () => {
-        setLanguage("nl")
-    }
-
-    const setEs = () => {
-        setLanguage("es")
-    }
-
-    const data = {
-        activeLanguage: language,
-        setNlFunction: setNl,
-        setEsFunction: setEs
-    }
-
-   console.log("data", data);
+   // console.log("data", data);
 
   return (
-   <LanguageSetting.Provider value={data}>
     <Router>
         <Header />
         <Switch>
@@ -50,7 +49,6 @@ function App() {
           </Route>
         </Switch>
     </Router>
-     </LanguageSetting.Provider>
      );
 }
 

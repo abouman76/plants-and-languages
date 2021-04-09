@@ -1,17 +1,17 @@
-import React, {useContext} from 'react';
+import React from 'react';
 import content from '../../data/content.json';
 
-import { LanguageSetting } from "../../context/LanguageContext";
+import { useLanguage } from "../../context/LanguageContext";
 
 function AllPlants() {
-    const {activeLanguage} = useContext(LanguageSetting);
+    const {activeLanguage} = useLanguage();
 
   return (
     <div className="page-container">
       <h2>{content[activeLanguage].plants.title}</h2>
       <p>{content[activeLanguage].plants.text}</p>
       <ul>
-        {content[activeLanguage].plants.plants.map((plant) => <li>{plant}</li>)}
+        {content[activeLanguage].plants.plants.map((plant) => <li key={plant}>{plant}</li>)}
       </ul>
     </div>
   );
