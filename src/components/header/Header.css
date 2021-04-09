@@ -58,6 +58,11 @@ nav a:link {
     color: red;
 }
 
+li button {
+    border: none;
+    outline: none;
+    background-color: #E6E5E0;
+}
 
 
 

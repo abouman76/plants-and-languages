@@ -10,7 +10,6 @@ ReactDOM.render(
     <LanguageProvider>
         <App />
     </LanguageProvider>
-
   </React.StrictMode>,
   document.getElementById('root')
 );

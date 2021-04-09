@@ -10,19 +10,13 @@ import AboutUs from './pages/aboutUs/AboutUs';
 import AllPlants from './pages/allPlants/AllPlants';
 
 import { LanguageSetting } from "./context/LanguageContext";
-
-import {useLanguage} from "./context/LanguageContext";
+// import {useLanguage} from "./context/LanguageContext";
 
 function App() {
 
     // const [language, setLanguage] = useLanguage();
 
     const [language, setLanguage] = useState("nl");
-    // const [flag, setFlag] = useState();
-
-    // const changeLanguages = () => {
-    //
-    // }
 
     const setNl = () => {
         setLanguage("nl")
@@ -38,7 +32,7 @@ function App() {
         setEsFunction: setEs
     }
 
-   // console.log("data", data);
+   console.log("data", data);
 
   return (
    <LanguageSetting.Provider value={data}>
