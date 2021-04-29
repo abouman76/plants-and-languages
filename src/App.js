@@ -10,6 +10,7 @@ import AboutUs from './pages/aboutUs/AboutUs';
 import AllPlants from './pages/allPlants/AllPlants';
 
 function App() {
+
   return (
     <Router>
         <Header />
@@ -25,7 +26,7 @@ function App() {
           </Route>
         </Switch>
     </Router>
-  );
+     );
 }
 
 export default App;
